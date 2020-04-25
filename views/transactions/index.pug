@@ -1,0 +1,8 @@
+h1 Transactions
+a(href="/transactions/create") Create
+table
+  each transaction in transactions
+    tr
+      td=transaction.id
+      td
+        a(href="./transactions/"+transaction.id+"/complete") complete
